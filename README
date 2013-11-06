@@ -1,0 +1,4 @@
+Symlink the vimrc and gvimrc files to where they should actually be:
+
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.gvim/vimrc ~/.gvimrc
