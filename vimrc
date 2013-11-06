@@ -4,6 +4,7 @@ call pathogen#helptags()
 " General settings
 syntax on
 set number
+color smyck
 
 " Map the leader key
 let mapleader = ","
