@@ -13,3 +13,6 @@
 [submodule "bundle/matchit-ruby"]
 	path = bundle/matchit-ruby
 	url = https://github.com/vim-scripts/ruby-matchit
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
