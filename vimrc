@@ -4,6 +4,8 @@ call pathogen#helptags()
 " General settings
 syntax on
 set number
+set autoindent
+set smartindent
 color smyck
 
 " Map the leader key
@@ -21,6 +23,9 @@ nmap <leader>+ za
 nmap <leader>- zc
 nmap <leader>/ zM
 nmap <leader>* zR
+
+" Filetype specific commands
+autocmd FileType javascript nmap <leader>p :!node %<cr>
 
 " insert empty line/line break
 nmap <leader><cr> i<cr><esc>k 
