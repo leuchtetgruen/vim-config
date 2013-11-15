@@ -37,6 +37,6 @@ if version >= 700
   au InsertLeave * hi StatusLine term=reverse ctermfg=white ctermbg=gray  gui=bold,reverse
 endif
 
-set tw=80
+autocmd FileType text set tw=80
 
 let NERDTreeChDirMode=2
