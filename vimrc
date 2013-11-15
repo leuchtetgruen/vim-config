@@ -24,9 +24,12 @@ nmap <leader>- zc
 nmap <leader>/ zM
 nmap <leader>* zR
 
+nmap <leader>ul VYpVr=
+
 " Filetype specific commands
 autocmd FileType javascript nmap <leader>p :!node %<cr>
-autocmd FileType markdown nmap <leader>p :!markdown % > /tmp/%.html && open /tmp/%.html<cr>
+autocmd FileType markdown nmap <leader>p :!~/.vim/scripts/preview_markdown.sh %<cr>
+autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<cr>
 
 " insert empty line/line break
 nmap <leader><cr> i<cr><esc>k 
