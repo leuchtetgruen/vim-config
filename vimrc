@@ -26,6 +26,7 @@ nmap <leader>* zR
 
 " Filetype specific commands
 autocmd FileType javascript nmap <leader>p :!node %<cr>
+autocmd FileType markdown nmap <leader>p :!markdown % > /tmp/%.html && open /tmp/%.html<cr>
 
 " insert empty line/line break
 nmap <leader><cr> i<cr><esc>k 
