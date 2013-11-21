@@ -27,6 +27,7 @@ nmap <leader>* zR
 nmap <leader>ul VYpVr=
 
 " Filetype specific commands
+autocmd FileType ruby nmap <leader>p :!ruby %<cr>
 autocmd FileType javascript nmap <leader>p :!node %<cr>
 autocmd FileType markdown nmap <leader>p :!~/.vim/scripts/preview_markdown.sh %<cr>
 autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<cr>
