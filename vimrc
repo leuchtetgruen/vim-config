@@ -14,6 +14,8 @@ let g:mapleader = ","
 
 " normal mode mappings
 nmap t :NERDTreeToggle<cr>B
+nmap + <c-W>+
+nmap - <c-W>-
 nmap <leader>w :w<cr>
 nmap <leader>q :q<cr>
 nmap <leader>Q :q!<cr>
@@ -27,7 +29,7 @@ nmap <leader>* zR
 nmap <leader>ul VYpVr=
 
 " Filetype specific commands
-autocmd FileType ruby nmap <leader>p :!ruby %<cr>
+autocmd FileType ruby nmap <leader>p :w<cr>:!ruby %<cr>
 autocmd FileType javascript nmap <leader>p :!node %<cr>
 autocmd FileType markdown nmap <leader>p :!~/.vim/scripts/preview_markdown.sh %<cr>
 autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<cr>
@@ -44,3 +46,7 @@ endif
 autocmd FileType text set tw=80
 
 let NERDTreeChDirMode=2
+
+" Directories for swp files
+set backupdir=~/.vimbackup
+set directory=~/.vimbackup
