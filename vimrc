@@ -14,6 +14,7 @@ let g:mapleader = ","
 
 " normal mode mappings
 nmap t :NERDTreeToggle<cr>B
+nmap T :TagbarToggle<cr>B
 nmap + <c-W>+
 nmap - <c-W>-
 nmap <leader>w :w<cr>
@@ -52,4 +53,4 @@ set backupdir=~/.vimbackup
 set directory=~/.vimbackup
 
 set foldmethod=syntax
-set foldlevel=2
+set foldlevel=10
