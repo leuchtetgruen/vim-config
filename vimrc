@@ -50,3 +50,6 @@ let NERDTreeChDirMode=2
 " Directories for swp files
 set backupdir=~/.vimbackup
 set directory=~/.vimbackup
+
+set foldmethod=syntax
+set foldlevel=2
