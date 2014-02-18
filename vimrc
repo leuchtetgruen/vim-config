@@ -34,6 +34,10 @@ autocmd FileType ruby nmap <leader>p :w<cr>:!ruby %<cr>
 autocmd FileType javascript nmap <leader>p :!node %<cr>
 autocmd FileType markdown nmap <leader>p :!~/.vim/scripts/preview_markdown.sh %<cr>
 autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<cr>
+autocmd FileType java nmap <leader>r :!android-run<cr>
+autocmd FileType java nmap <leader>l :!logcat<cr>
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YCM/cpp/ycm/.ycm_extra_conf.py'
 
 " insert empty line/line break
 nmap <leader><cr> i<cr><esc>k 
@@ -54,3 +58,5 @@ set directory=~/.vimbackup
 
 set foldmethod=syntax
 set foldlevel=10
+
+filetype plugin indent on

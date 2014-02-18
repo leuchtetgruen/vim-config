@@ -43,3 +43,9 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "bundle/tasklist"]
+	path = bundle/tasklist
+	url = https://github.com/superjudge/tasklist-pathogen
+[submodule "bundle/YCM"]
+	path = bundle/YCM
+	url = https://github.com/Valloric/YouCompleteMe
