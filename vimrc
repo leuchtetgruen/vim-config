@@ -37,6 +37,10 @@ autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<
 autocmd FileType java nmap <leader>r :!android-run<cr>
 autocmd FileType java nmap <leader>l :!logcat<cr>
 
+" XML folding
+ let g:xml_syntax_folding=1
+ au FileType xml setlocal foldmethod=syntax
+
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YCM/cpp/ycm/.ycm_extra_conf.py'
 
 " insert empty line/line break
