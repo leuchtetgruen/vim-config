@@ -37,6 +37,8 @@ autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<
 autocmd FileType java nmap <leader>r :!android-run<cr>
 autocmd FileType java nmap <leader>l :!logcat<cr>
 
+au! FileType scss syntax cluster sassCssAttributes add=@cssColors
+
 " XML folding
  let g:xml_syntax_folding=1
  au FileType xml setlocal foldmethod=syntax
