@@ -27,8 +27,8 @@ nmap <leader>- zc
 nmap <leader>/ zM
 nmap <leader>* zR
 
-nmap <leader>/+ :set hlsearch<cr>
-nmap <leader>/- :set nohlsearch<cr>
+set hlsearch
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 nmap <leader>ul VYpVr=
 
