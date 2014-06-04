@@ -27,6 +27,9 @@ nmap <leader>- zc
 nmap <leader>/ zM
 nmap <leader>* zR
 
+nmap <leader>/+ :set hlsearch<cr>
+nmap <leader>/- :set nohlsearch<cr>
+
 nmap <leader>ul VYpVr=
 
 " Filetype specific commands
