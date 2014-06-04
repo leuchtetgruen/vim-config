@@ -69,3 +69,6 @@ set foldmethod=syntax
 set foldlevel=10
 
 filetype plugin indent on
+
+set laststatus=2
+"AirlineTheme solarized
