@@ -76,3 +76,4 @@ let g:airline_section_b		= '%t'
 let g:airline_section_c 	= '%{airline#extensions#tagbar#currenttag()}'
 let g:airline_section_y 	= '%{&ft}'
 let g:airline_section_x 	= '%{strftime("%c")}'
+set lazyredraw
