@@ -71,4 +71,8 @@ set foldlevel=10
 filetype plugin indent on
 
 set laststatus=2
-"AirlineTheme solarized
+let g:airline_theme             = 'badwolf'
+let g:airline_section_b		= '%t'
+let g:airline_section_c 	= '%{airline#extensions#tagbar#currenttag()}'
+let g:airline_section_y 	= '%{&ft}'
+let g:airline_section_x 	= '%{strftime("%c")}'
