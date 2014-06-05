@@ -6,6 +6,7 @@ syntax on
 set number
 set autoindent
 set smartindent
+set cursorline
 color smyck
 
 " Map the leader key
@@ -52,6 +53,11 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YCM/cpp/ycm/.ycm_extra_conf.py'
 nmap <leader><cr> i<cr><esc>k 
 nmap <leader><leader><cr> o<esc>
 
+" Visual mode mappings
+
+" search for selection in whole file with <leader/
+vmap <leader>/ yq/p<cr>
+
 if version >= 700
   au InsertEnter * hi StatusLine term=reverse ctermbg=red gui=undercurl guisp=Magenta
   au InsertLeave * hi StatusLine term=reverse ctermfg=white ctermbg=gray  gui=bold,reverse
@@ -70,10 +76,23 @@ set foldlevel=10
 
 filetype plugin indent on
 
+" Airline settings
 set laststatus=2
-let g:airline_theme             = 'badwolf'
+let g:airline_theme             = 'solarized'
 let g:airline_section_b		= '%t'
 let g:airline_section_c 	= '%{airline#extensions#tagbar#currenttag()}'
 let g:airline_section_y 	= '%{&ft}'
 let g:airline_section_x 	= '%{strftime("%c")}'
+let g:airline_powerline_fonts = 1
+set guifont=Sauce\ Code\ Powerline\ Light:h11
 set lazyredraw
+
+" custom commands
+function! FindInProject(query, path)
+	let q = a:query
+	let p = a:path
+	execute 'silent grep ' . q . ' ' . p 
+	copen
+endfunction
+
+:command! -nargs=* -complete=file Search call FindInProject(<f-args>)
