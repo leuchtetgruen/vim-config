@@ -36,10 +36,14 @@ nmap <leader>ul VYpVr=
 " Filetype specific commands
 autocmd FileType ruby nmap <leader>p :w<cr>:!ruby %<cr>
 autocmd FileType javascript nmap <leader>p :!node %<cr>
+autocmd FileType scala nmap <leader>p :!scala -i %<cr>
 autocmd FileType markdown nmap <leader>p :!~/.vim/scripts/preview_markdown.sh %<cr>
 autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<cr>
 autocmd FileType java nmap <leader>r :!android-run<cr>
 autocmd FileType java nmap <leader>l :!logcat<cr>
+
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html let g:ycm_cache_omnifunc = 0
 
 au! FileType scss syntax cluster sassCssAttributes add=@cssColors
 
@@ -76,6 +80,9 @@ set foldlevel=10
 
 filetype plugin indent on
 
+" Eclim settings (in case i want to use it)
+ let g:EclimCompletionMethod = 'omnifunc'
+
 " Airline settings
 set laststatus=2
 let g:airline_theme             = 'solarized'
@@ -86,6 +93,10 @@ let g:airline_section_x 	= '%{strftime("%c")}'
 let g:airline_powerline_fonts = 1
 set guifont=Sauce\ Code\ Powerline\ Light:h11
 set lazyredraw
+
+" snipmate settings - Use CTRL+E for expansion of snippets
+imap <C-E> <Plug>snipMateNextOrTrigger
+autocmd FileType html imap <C-J> <Plug>snipMateNextOrTrigger
 
 " custom commands
 function! FindInProject(query, path)
