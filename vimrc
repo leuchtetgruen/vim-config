@@ -79,6 +79,7 @@ set foldmethod=syntax
 set foldlevel=10
 
 filetype plugin indent on
+filetype plugin on
 
 " Eclim settings (in case i want to use it)
  let g:EclimCompletionMethod = 'omnifunc'
