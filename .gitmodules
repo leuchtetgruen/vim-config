@@ -61,3 +61,9 @@
 [submodule "bundle/matchit.zip"]
 	path = bundle/matchit.zip
 	url = https://github.com/vim-scripts/matchit.zip
+[submodule "bundle/copy-as-rtf"]
+	path = bundle/copy-as-rtf
+	url = https://github.com/zerowidth/vim-copy-as-rtf
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade

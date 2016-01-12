@@ -37,10 +37,12 @@ nmap <leader>ul VYpVr=
 autocmd FileType ruby nmap <leader>p :w<cr>:!ruby %<cr>
 autocmd FileType javascript nmap <leader>p :!node %<cr>
 autocmd FileType scala nmap <leader>p :!scala -i %<cr>
+autocmd FileType html nmap <leader>p :w<cr>:!open %<cr>
 autocmd FileType markdown nmap <leader>p :!~/.vim/scripts/preview_markdown.sh %<cr>
 autocmd FileType markdown nmap <leader>C :!~/.vim/scripts/convert_markdown.sh %<cr>
 autocmd FileType java nmap <leader>r :!android-run<cr>
 autocmd FileType java nmap <leader>l :!logcat<cr>
+
 
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType html let g:ycm_cache_omnifunc = 0
@@ -108,3 +110,8 @@ function! FindInProject(query, path)
 endfunction
 
 :command! -nargs=* -complete=file Search call FindInProject(<f-args>)
+
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
