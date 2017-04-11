@@ -100,6 +100,7 @@ set lazyredraw
 " snipmate settings - Use CTRL+E for expansion of snippets
 imap <C-E> <Plug>snipMateNextOrTrigger
 autocmd FileType html imap <C-J> <Plug>snipMateNextOrTrigger
+imap <tab> <Plug>snipMateNextOrTrigger
 
 " custom commands
 function! FindInProject(query, path)
@@ -115,3 +116,7 @@ endfunction
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" YCM shortcuts
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
