@@ -120,3 +120,7 @@ set expandtab
 " YCM shortcuts
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
+
+" tags
+nmap <C-b> <C-]> 
+nmap <C-B> <C-]> 
