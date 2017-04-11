@@ -124,3 +124,7 @@ let g:ycm_key_list_previous_completion=[]
 " tags
 nmap <C-b> <C-]> 
 nmap <C-B> <C-]> 
+set tags+=gems.tags
+
+" git
+command! GReset !git checkout %
