@@ -129,3 +129,6 @@ set tags+=gems.tags
 
 " git
 command! GReset !git checkout %
+
+"ctrl-p
+nmap <leader>t :CtrlP
